@@ -3,8 +3,9 @@ import "./App.css"
 
 function miComponente({rey}) {
 
-  const comprar = () =>{
+  const comprar = (elemento) =>{
     rey.setTotal((e) => e+ rey.precio)
+    elemento.target.parentNode.style.display="none"
     
   }
 
